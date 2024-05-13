@@ -34,33 +34,32 @@ ChartJS.register(
   Legend
 );
 
-export const options: ChartOptions<"line"> = {
-  responsive: true,
-  plugins: {
-    legend: {
-      position: "top",
-    },
-    title: {
-      display: false,
-      text: "Pulse Rate",
-    },
-  },
-};
-
-export const barOptions: ChartOptions<"bar"> = {
-  responsive: true,
-  plugins: {
-    legend: {
-      position: "top",
-    },
-    title: {
-      display: false,
-      text: "Sugar Level",
-    },
-  },
-};
-
 const Patient = () => {
+  const options: ChartOptions<"line"> = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "top",
+      },
+      title: {
+        display: false,
+        text: "Pulse Rate",
+      },
+    },
+  };
+
+  const barOptions: ChartOptions<"bar"> = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "top",
+      },
+      title: {
+        display: false,
+        text: "Sugar Level",
+      },
+    },
+  };
   const labels = ["100", "120", "130", "140"];
   const data = {
     labels,
