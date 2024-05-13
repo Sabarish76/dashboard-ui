@@ -13,7 +13,7 @@ const SideNav = () => {
     <div>
       {" "}
       <header>
-        <div className="bg-white shadow-2xl md:w-2/3  min-h-screen h-fit relative">
+        <div className="bg-white shadow-md  md:w-2/3 min-h-screen  relative">
           <h1 className="font-bold text-center py-2">Smart Care</h1>
           <div className=" relative">
             <Image src={image} alt="img" />
