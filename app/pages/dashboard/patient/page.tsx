@@ -60,48 +60,47 @@ export const barOptions: ChartOptions<"bar"> = {
   },
 };
 
-const labels = ["100", "120", "130", "140"];
-export const data = {
-  labels,
-  datasets: [
-    {
-      label: "Dataset",
-      data: [200, 10, 200, 30],
-      borderColor: "rgb(255, 99, 132)",
-      backgroundColor: "rgba(255, 99, 132, 0.5)",
-    },
-  ],
-};
-
-const barLabels = ["0 - 89", "90 - 119", "140 - 159", "150 - 500"];
-const barData = {
-  labels: barLabels,
-  datasets: [
-    {
-      label: "Dataset 1",
-      data: [20, 35, 53, 30],
-      backgroundColor: [
-        "rgba(255, 99, 132, 0.5)",
-        "rgba(54, 162, 235, 0.5)",
-        "rgba(255, 206, 86, 0.5)",
-        "rgba(75, 192, 192, 0.5)",
-        "rgba(153, 102, 255, 0.5)",
-        "rgba(255, 159, 64, 0.5)",
-      ],
-      borderColor: [
-        "rgb(255, 99, 132)",
-        "rgb(54, 162, 235)",
-        "rgb(255, 206, 86)",
-        "rgb(75, 192, 192)",
-        "rgb(153, 102, 255)",
-        "rgb(255, 159, 64)",
-      ],
-      borderWidth: 1,
-    },
-  ],
-};
-
 const Patient = () => {
+  const labels = ["100", "120", "130", "140"];
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: "Dataset",
+        data: [200, 10, 200, 30],
+        borderColor: "rgb(255, 99, 132)",
+        backgroundColor: "rgba(255, 99, 132, 0.5)",
+      },
+    ],
+  };
+
+  const barLabels = ["0 - 89", "90 - 119", "140 - 159", "150 - 500"];
+  const barData = {
+    labels: barLabels,
+    datasets: [
+      {
+        label: "Dataset 1",
+        data: [20, 35, 53, 30],
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.5)",
+          "rgba(54, 162, 235, 0.5)",
+          "rgba(255, 206, 86, 0.5)",
+          "rgba(75, 192, 192, 0.5)",
+          "rgba(153, 102, 255, 0.5)",
+          "rgba(255, 159, 64, 0.5)",
+        ],
+        borderColor: [
+          "rgb(255, 99, 132)",
+          "rgb(54, 162, 235)",
+          "rgb(255, 206, 86)",
+          "rgb(75, 192, 192)",
+          "rgb(153, 102, 255)",
+          "rgb(255, 159, 64)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
   return (
     <div className="p-7">
       <div className="flex gap-4 items-center">
