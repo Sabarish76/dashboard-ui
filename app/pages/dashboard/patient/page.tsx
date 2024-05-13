@@ -8,6 +8,9 @@ import avatar from "../../../images/avatar.png";
 import graph1 from "../../../images/graph1.png";
 import graph2 from "../../../images/graph2.png";
 import Image from "next/image";
+import { Line, Bar } from "react-chartjs-2";
+import { ChartOptions } from "chart.js/auto";
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -19,8 +22,6 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { Line } from "react-chartjs-2";
-import { Bar } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
@@ -33,7 +34,7 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
+export const options: ChartOptions<"line"> = {
   responsive: true,
   plugins: {
     legend: {
@@ -46,9 +47,7 @@ export const options = {
   },
 };
 
-
-
-export const barOptions = {
+export const barOptions: ChartOptions<"bar"> = {
   responsive: true,
   plugins: {
     legend: {
@@ -61,9 +60,7 @@ export const barOptions = {
   },
 };
 
-const barLabels = ["0 - 89", "90 - 119", "140 - 159", "150 - 500"];
 const labels = ["100", "120", "130", "140"];
-
 export const data = {
   labels,
   datasets: [
@@ -76,6 +73,7 @@ export const data = {
   ],
 };
 
+const barLabels = ["0 - 89", "90 - 119", "140 - 159", "150 - 500"];
 const barData = {
   labels: barLabels,
   datasets: [
