@@ -1,5 +1,5 @@
 import { Alert } from "flowbite-react";
-import Dashboard from "./pages/dashboard/page";
+import Dashboard from "./pages/dashboard/page.jsx";
 import SideNav from "./pages/sidenav/page";
 import Navbar from "./pages/navbar/page";
 
